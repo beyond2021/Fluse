@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		221231332C1CF8B20092405B /* FunctionTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221231322C1CF8B20092405B /* FunctionTools.swift */; };
+		221231362C1D063D0092405B /* AIAssistantResponseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221231352C1D063D0092405B /* AIAssistantResponseView.swift */; };
+		221231382C1D07B30092405B /* AIAssistantTextChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221231372C1D07B30092405B /* AIAssistantTextChatViewModel.swift */; };
+		2212313A2C1DCE0D0092405B /* FunctionArguments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221231392C1DCE0D0092405B /* FunctionArguments.swift */; };
+		2212313C2C1DCF7D0092405B /* FunctionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2212313B2C1DCF7D0092405B /* FunctionResponse.swift */; };
+		2212313E2C1DD35B0092405B /* FunctionsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2212313D2C1DD35B0092405B /* FunctionsManager.swift */; };
+		221231402C21D9AE0092405B /* AIAssistantVoiceChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2212313F2C21D9AE0092405B /* AIAssistantVoiceChatViewModel.swift */; };
+		2288BFE02C1B9B6600693FC1 /* ChatGPTUI in Frameworks */ = {isa = PBXBuildFile; productRef = 2288BFDF2C1B9B6600693FC1 /* ChatGPTUI */; };
+		2288BFE42C1B9D0F00693FC1 /* AIAssistantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2288BFE32C1B9D0F00693FC1 /* AIAssistantView.swift */; };
+		2295CE7E2C23CB8300D77B5E /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2295CE7D2C23CB8300D77B5E /* Date+Extension.swift */; };
 		22E923C12BED194E0014A0CC /* FluseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E923C02BED194E0014A0CC /* FluseApp.swift */; };
 		22E923C32BED194E0014A0CC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E923C22BED194E0014A0CC /* ContentView.swift */; };
 		22E923C52BED19500014A0CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22E923C42BED19500014A0CC /* Assets.xcassets */; };
@@ -32,6 +42,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		221231322C1CF8B20092405B /* FunctionTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionTools.swift; sourceTree = "<group>"; };
+		221231352C1D063D0092405B /* AIAssistantResponseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIAssistantResponseView.swift; sourceTree = "<group>"; };
+		221231372C1D07B30092405B /* AIAssistantTextChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIAssistantTextChatViewModel.swift; sourceTree = "<group>"; };
+		221231392C1DCE0D0092405B /* FunctionArguments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionArguments.swift; sourceTree = "<group>"; };
+		2212313B2C1DCF7D0092405B /* FunctionResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionResponse.swift; sourceTree = "<group>"; };
+		2212313D2C1DD35B0092405B /* FunctionsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionsManager.swift; sourceTree = "<group>"; };
+		2212313F2C21D9AE0092405B /* AIAssistantVoiceChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIAssistantVoiceChatViewModel.swift; sourceTree = "<group>"; };
+		2288BFE32C1B9D0F00693FC1 /* AIAssistantView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIAssistantView.swift; sourceTree = "<group>"; };
+		2295CE7D2C23CB8300D77B5E /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		22E923BD2BED194E0014A0CC /* Fluse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fluse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22E923C02BED194E0014A0CC /* FluseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FluseApp.swift; sourceTree = "<group>"; };
 		22E923C22BED194E0014A0CC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -63,6 +82,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				22E923D42BED24990014A0CC /* FirebaseFirestore in Frameworks */,
+				2288BFE02C1B9B6600693FC1 /* ChatGPTUI in Frameworks */,
 				22E923D62BED24AB0014A0CC /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -70,6 +90,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		221231312C1CF8470092405B /* _Model */ = {
+			isa = PBXGroup;
+			children = (
+				221231322C1CF8B20092405B /* FunctionTools.swift */,
+				221231392C1DCE0D0092405B /* FunctionArguments.swift */,
+				2212313B2C1DCF7D0092405B /* FunctionResponse.swift */,
+			);
+			path = _Model;
+			sourceTree = "<group>";
+		};
+		221231342C1D05F30092405B /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				221231372C1D07B30092405B /* AIAssistantTextChatViewModel.swift */,
+				2212313F2C21D9AE0092405B /* AIAssistantVoiceChatViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		2288BFE12C1B9CA500693FC1 /* AIAssistant */ = {
+			isa = PBXGroup;
+			children = (
+				221231342C1D05F30092405B /* ViewModels */,
+				221231312C1CF8470092405B /* _Model */,
+				2288BFE22C1B9CC600693FC1 /* Views */,
+				2212313D2C1DD35B0092405B /* FunctionsManager.swift */,
+				2295CE7D2C23CB8300D77B5E /* Date+Extension.swift */,
+			);
+			path = AIAssistant;
+			sourceTree = "<group>";
+		};
+		2288BFE22C1B9CC600693FC1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2288BFE32C1B9D0F00693FC1 /* AIAssistantView.swift */,
+				221231352C1D063D0092405B /* AIAssistantResponseView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		22E923B42BED194E0014A0CC = {
 			isa = PBXGroup;
 			children = (
@@ -90,6 +150,7 @@
 		22E923BF2BED194E0014A0CC /* Fluse */ = {
 			isa = PBXGroup;
 			children = (
+				2288BFE12C1B9CA500693FC1 /* AIAssistant */,
 				22E923EA2BEFB43F0014A0CC /* Views */,
 				22E923E72BEFB1AB0014A0CC /* ViewModels */,
 				22E923E42BEFA8860014A0CC /* DatabaseManager */,
@@ -190,6 +251,7 @@
 			packageProductDependencies = (
 				22E923D32BED24990014A0CC /* FirebaseFirestore */,
 				22E923D52BED24AB0014A0CC /* FirebaseFirestoreSwift */,
+				2288BFDF2C1B9B6600693FC1 /* ChatGPTUI */,
 			);
 			productName = Fluse;
 			productReference = 22E923BD2BED194E0014A0CC /* Fluse.app */;
@@ -221,6 +283,7 @@
 			mainGroup = 22E923B42BED194E0014A0CC;
 			packageReferences = (
 				22E923D12BED24250014A0CC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				2288BFDE2C1B9B6600693FC1 /* XCRemoteSwiftPackageReference "ChatGPTUI" */,
 			);
 			productRefGroup = 22E923BE2BED194E0014A0CC /* Products */;
 			projectDirPath = "";
@@ -251,19 +314,28 @@
 			files = (
 				22E923E62BEFA8B40014A0CC /* DatabaseManager.swift in Sources */,
 				22E923DF2BEDB14E0014A0CC /* ExpenseLog.swift in Sources */,
+				221231332C1CF8B20092405B /* FunctionTools.swift in Sources */,
+				221231402C21D9AE0092405B /* AIAssistantVoiceChatViewModel.swift in Sources */,
 				22E923DA2BED93580014A0CC /* AppDelegate.swift in Sources */,
 				22F2B3BA2BF74F2C00CAC346 /* LogFormViewModel.swift in Sources */,
 				22F2B3BC2BF8022700CAC346 /* LogFormView.swift in Sources */,
+				221231362C1D063D0092405B /* AIAssistantResponseView.swift in Sources */,
 				22E923E92BEFB1D60014A0CC /* LogListViewModel.swift in Sources */,
+				221231382C1D07B30092405B /* AIAssistantTextChatViewModel.swift in Sources */,
 				22F2B3B82BF644E400CAC346 /* LogListContainerView.swift in Sources */,
+				2212313C2C1DCF7D0092405B /* FunctionResponse.swift in Sources */,
 				22E923C32BED194E0014A0CC /* ContentView.swift in Sources */,
 				22E923E32BEDB8D00014A0CC /* Utils.swift in Sources */,
 				22E923F02BF2096C0014A0CC /* CategoryImageView.swift in Sources */,
+				2295CE7E2C23CB8300D77B5E /* Date+Extension.swift in Sources */,
 				22E923C12BED194E0014A0CC /* FluseApp.swift in Sources */,
 				22E923DD2BEDAA980014A0CC /* Category.swift in Sources */,
 				22E923EE2BF1BFAC0014A0CC /* SelectSortOrderView.swift in Sources */,
+				2212313A2C1DCE0D0092405B /* FunctionArguments.swift in Sources */,
+				2288BFE42C1B9D0F00693FC1 /* AIAssistantView.swift in Sources */,
 				22E923EC2BEFB4790014A0CC /* FilterCategoriesView.swift in Sources */,
 				22F2B3B62BF3F7D500CAC346 /* LogListView.swift in Sources */,
+				2212313E2C1DD35B0092405B /* FunctionsManager.swift in Sources */,
 				22E923E12BEDB6540014A0CC /* Sort.swift in Sources */,
 				22E923F22BF20B840014A0CC /* LogItemView.swift in Sources */,
 			);
@@ -400,6 +472,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Fluse/Info.plist;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Talk with AI Assistant";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -440,6 +513,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Fluse/Info.plist;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Talk with AI Assistant";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -490,6 +564,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		2288BFDE2C1B9B6600693FC1 /* XCRemoteSwiftPackageReference "ChatGPTUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/alfianlosari/ChatGPTUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.12;
+			};
+		};
 		22E923D12BED24250014A0CC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
@@ -501,6 +583,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		2288BFDF2C1B9B6600693FC1 /* ChatGPTUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2288BFDE2C1B9B6600693FC1 /* XCRemoteSwiftPackageReference "ChatGPTUI" */;
+			productName = ChatGPTUI;
+		};
 		22E923D32BED24990014A0CC /* FirebaseFirestore */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 22E923D12BED24250014A0CC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
