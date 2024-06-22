@@ -32,5 +32,6 @@ enum AIAssistantResponseFunctionType {
     case addExpenseLog(AddExpenseLogViewProperties)
     // to render the string eq missing parameters
     case listExpenses([ExpenseLog]) // 
+    case visualizeExpenses(ChartType, [Option])
     case contentText
 }

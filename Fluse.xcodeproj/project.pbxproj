@@ -17,6 +17,7 @@
 		2288BFE02C1B9B6600693FC1 /* ChatGPTUI in Frameworks */ = {isa = PBXBuildFile; productRef = 2288BFDF2C1B9B6600693FC1 /* ChatGPTUI */; };
 		2288BFE42C1B9D0F00693FC1 /* AIAssistantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2288BFE32C1B9D0F00693FC1 /* AIAssistantView.swift */; };
 		2295CE7E2C23CB8300D77B5E /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2295CE7D2C23CB8300D77B5E /* Date+Extension.swift */; };
+		2295CE802C24D0A000D77B5E /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2295CE7F2C24D0A000D77B5E /* ChartView.swift */; };
 		22E923C12BED194E0014A0CC /* FluseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E923C02BED194E0014A0CC /* FluseApp.swift */; };
 		22E923C32BED194E0014A0CC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E923C22BED194E0014A0CC /* ContentView.swift */; };
 		22E923C52BED19500014A0CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22E923C42BED19500014A0CC /* Assets.xcassets */; };
@@ -51,6 +52,7 @@
 		2212313F2C21D9AE0092405B /* AIAssistantVoiceChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIAssistantVoiceChatViewModel.swift; sourceTree = "<group>"; };
 		2288BFE32C1B9D0F00693FC1 /* AIAssistantView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIAssistantView.swift; sourceTree = "<group>"; };
 		2295CE7D2C23CB8300D77B5E /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		2295CE7F2C24D0A000D77B5E /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
 		22E923BD2BED194E0014A0CC /* Fluse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fluse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22E923C02BED194E0014A0CC /* FluseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FluseApp.swift; sourceTree = "<group>"; };
 		22E923C22BED194E0014A0CC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -228,6 +230,7 @@
 				22F2B3B52BF3F7D500CAC346 /* LogListView.swift */,
 				22F2B3B72BF644E400CAC346 /* LogListContainerView.swift */,
 				22F2B3BB2BF8022700CAC346 /* LogFormView.swift */,
+				2295CE7F2C24D0A000D77B5E /* ChartView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -335,6 +338,7 @@
 				2288BFE42C1B9D0F00693FC1 /* AIAssistantView.swift in Sources */,
 				22E923EC2BEFB4790014A0CC /* FilterCategoriesView.swift in Sources */,
 				22F2B3B62BF3F7D500CAC346 /* LogListView.swift in Sources */,
+				2295CE802C24D0A000D77B5E /* ChartView.swift in Sources */,
 				2212313E2C1DD35B0092405B /* FunctionsManager.swift in Sources */,
 				22E923E12BEDB6540014A0CC /* Sort.swift in Sources */,
 				22E923F22BF20B840014A0CC /* LogItemView.swift in Sources */,

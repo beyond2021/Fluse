@@ -30,3 +30,14 @@ struct ListExpenseArgs: Codable {
     }
 }
 
+struct VisualizeExpenseArgs: Codable {
+    let date: Date?
+    let startDate: Date?
+    let endDate: Date?
+    
+    let chartType: String
+    var chartTypeEnum: ChartType {
+        ChartType(rawValue: chartType) ?? .pie
+    }
+}
+

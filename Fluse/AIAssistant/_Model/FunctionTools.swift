@@ -11,6 +11,7 @@ import Foundation
 enum AIAssistantFunctionType: String {
     case addExpenseLog
     case listExpensesLog
+    case visualizeExpenses
     // Photo receipt snap TODO
     // Financial Health log TODO
     // Category Bugeting log TODO - grocery dining travel and more limits
@@ -124,7 +125,15 @@ let tools: [Components.Schemas.ChatCompletionTool] = [
                                 startDateProp,
                                 endDateProp,
                                 sortOrderProp,
-                                quantityOfLogsProp])
+                                quantityOfLogsProp]),
+    createFunction(name: AIAssistantFunctionType.visualizeExpenses.rawValue,
+                   description: "visualize expenses logs in pie or bar chart",
+                   properties: [ chartTypeProp,
+                                 dateProp,
+                                 startDateProp,
+                                 endDateProp
+                               ],
+                  requiredProperties: [chartTypeProp]) 
 ]
 
 /*

@@ -16,6 +16,8 @@ struct AIAssistantResponseView: View {
             AddExpenseLogView(props: props)
         case .listExpenses(let logs):
             ListExpensesLogsView(text: response.text, logs: logs)
+        case .visualizeExpenses(let chartType, let options):
+            VisualizeExpenseLogView(text: response.text, options: options, chartType: chartType)
         default:
             Text(response.text)
                 .frame(maxWidth: .infinity, alignment: .leading)
@@ -73,6 +75,43 @@ struct ListExpensesLogsView: View {
                 ForEach(logs) {
                     LogItemView(log: $0)
                     Divider()
+                }
+            }
+        }
+    }
+}
+struct VisualizeExpenseLogView: View {
+    let text: String
+    let options: [Option]
+    let chartType: ChartType
+    // animation
+    @State private var isAnimated: Bool = false
+    @State private var trigger: Bool = false
+    var body: some View {
+        VStack(alignment: .leading) {
+            Text(text)
+                .font(.largeTitle)
+            if options.count > 0 {
+                Divider()
+                switch chartType {
+                case .pie:
+                    PieChartView(options: options)
+                    #if os(macOS)
+                        .frame(maxWidth: .infinity, minHeight: 220)
+                        .padding(.bottom)
+                    #endif
+                        .frame(maxWidth: .infinity)
+                        .frame(height: 400)
+                        .padding(.bottom)
+                case .bar:
+                    BarChartView(options: options)
+                    #if os(macOS)
+                        .frame(maxWidth: .infinity, minHeight: 220)
+                        .padding(.bottom)
+                    #endif
+                        .frame(maxWidth: .infinity)
+                        .frame(height: 400)
+                        .padding(.bottom)
                 }
             }
         }

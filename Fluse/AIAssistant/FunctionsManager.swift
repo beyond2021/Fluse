@@ -91,6 +91,25 @@ class FunctionsManager {
                     }
                     
                     return .init(text: text, type: .listExpenses(logs))
+                case .visualizeExpenses:
+                    guard let visualizeExpenseArgs = try? self.jsonDecoder.decode(VisualizeExpenseArgs.self, from: argumentData) else {
+                        throw "Failed to parse function arguments \(toolCall.function.name) \(toolCall.function.arguments)"
+                    }
+                    
+                    let query = getQuery(args: .init(date: visualizeExpenseArgs.date, startDate: visualizeExpenseArgs.startDate, endDate: visualizeExpenseArgs.endDate, category: nil, sortOrder: nil, quantityOfLogs: nil))
+                    
+                    let docs = try await query.getDocuments()
+                    let logs = try docs.documents.map { try $0.data(as: ExpenseLog.self)}
+                    
+                    var categorySumDict = [Category: Double]()
+                    logs.forEach { log in
+                        categorySumDict.updateValue((categorySumDict[log.categoryEnum] ?? 0) + log.amount, forKey: log.categoryEnum)
+                    }
+                    
+                    let chartOptions = categorySumDict.map { Option(category: $0.key, amount: $0.value) }
+                    return .init(text: "Sure, here is the visualization of your expenses for each category", type: .visualizeExpenses(visualizeExpenseArgs.chartTypeEnum, chartOptions))
+                
+                    
                     
                 default:
                     var text = "Function Name: \(toolCall.function.name)"
