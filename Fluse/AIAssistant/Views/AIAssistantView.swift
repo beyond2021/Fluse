@@ -8,7 +8,7 @@
 import ChatGPTUI
 import SwiftUI
 
-let apiKey = "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"
+let apiKey = "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"
 let _senderImage = ""
 let _botImage = ""
 

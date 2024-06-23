@@ -90,7 +90,7 @@ struct VisualizeExpenseLogView: View {
     var body: some View {
         VStack(alignment: .leading) {
             Text(text)
-                .font(.largeTitle)
+                .font(.headline)
             if options.count > 0 {
                 Divider()
                 switch chartType {
@@ -101,8 +101,8 @@ struct VisualizeExpenseLogView: View {
                         .padding(.bottom)
                     #endif
                         .frame(maxWidth: .infinity)
-                        .frame(height: 400)
-                        .padding(.bottom)
+//                        .frame(height: 400)
+                        //.padding(.bottom)
                 case .bar:
                     BarChartView(options: options)
                     #if os(macOS)
@@ -111,7 +111,16 @@ struct VisualizeExpenseLogView: View {
                     #endif
                         .frame(maxWidth: .infinity)
                         .frame(height: 400)
+                        .padding()
+                case .line:
+                    LineChartView(options: options)
+                    #if os(macOS)
+                        .frame(maxWidth: .infinity, minHeight: 220)
                         .padding(.bottom)
+                    #endif
+                        .frame(maxWidth: .infinity)
+                        .frame(height: 400)
+                        .padding()
                 }
             }
         }

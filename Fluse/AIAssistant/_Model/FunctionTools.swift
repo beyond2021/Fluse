@@ -83,7 +83,7 @@ let quantityOfLogsProp = (key: "quantityOfLogs",
 let chartTypeProp = (key: "chartType",
                      value: [
                         "type": "string",
-                        "enum": ["pie", "bar"],
+                        "enum": ["pie", "bar", "line"],
                         "description": "the type of chart to be shown. if not provided, use pie as default value."
                      ])
                      
